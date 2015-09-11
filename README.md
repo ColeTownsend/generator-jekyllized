@@ -54,6 +54,9 @@ optimize your CSS, JS, HTML and images, automatic vendor prefixing with
 * Automatic generation of year/month/category/tags archives
 * Fully valid Atom 1.0 feed and sitemap
 
+**Gotchas**:
+* You may have an issue with the gem `psych`. Be sure you run `gem cleanup` and double check you only have one version of `psych` installed.
+
 ## Getting started
 
 ## Installation
@@ -62,6 +65,9 @@ To install you need [Node.js][nodejs] (`>0.10.0`), the latest version of `yo`
 (`npm install -g yo`) and [Ruby][rubylang] (`> 1.9`) for Jekyll. Install
 Jekyllized via NPM: `npm install -g generator-jekyllized` and finally run `yo
 jekyllized` in the directory you want to install in.
+
+**Gotchas**:
+* Somtimes there is a conflict with `gulp`. You need `gulp` 4.0 installed locally and you need to be sure this is the gulp version that you are using.
 
 ## Usage
 
@@ -79,6 +85,8 @@ development via [localtunnel][localtunnel] so you can view it on your tablet,
 phone or let other people view it as well. By default clicks and scrolling is
 also broadcast so when you go to the `About` page all other browsers listening
 in on the session will as well.
+
+*Gotchaes*: You may need to copy this gulpfile to get it working [updated gulpfile as of 9/10](https://gist.github.com/sondr3/d5208fc8e7bb77b709b5)
 
 #### `gulp build`
 
